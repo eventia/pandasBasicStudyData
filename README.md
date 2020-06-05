@@ -1,6 +1,21 @@
-# Do it! 판다스 입문 실습 자료입니다.
+# 판다스 스터디 데이터 자료입니다.
 
-안녕하세요? 이지스퍼블리싱의 담당 편집자 박현규라고 합니다.<br/>
-해당 도서의 실습 자료는 방문하신 깃허브의 오른쪽 위에 있는 `Clone or Download` 버튼(초록색 버튼)으로 내려받을 수 있습니다.<br/>
-만약 깃허브가 익숙하지 않은 독자 여러분은 [이지스퍼블리싱 홈페이지](http://easyspub.co.kr/30_Menu/DataList/PUB)에 방문하여<br/>
-무료 회원가입을 하시고 [자료실]에서 Do it! 판다스 입문을 검색하여 자료를 내려받으세요.
+"데이터분석을 위한 판다스입문" 이라는 책을 공부하며 Google Colab 에서 사용하기 위한 약간의 수정을 거쳤습니다.
+아래 코드를 맨 상단에 추가하여 사용하세요. 깃허브에서 데이터를 읽어와서 colab 에 넣는 코드입니다. 
+
+abcde
+
+```
+try:
+    if upload == True:
+        print('Data Uploaded')
+    else :
+        print('Data uploaded Error')
+except :
+    upload = False
+    !git clone https://github.com/MLBasic/pandasBasicStudyData.git
+    %cd /content/pandasBasicStudyData/notebook/
+    upload = True
+```
+		
+		
